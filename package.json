@@ -1,0 +1,37 @@
+{
+  "name": "tidyforge",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Monorepo containing npm packages focused on developer workflow consistency, including code cleanup, linting, formatting, and standardized commit messages.",
+  "author": "AnuvabMaity",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@tidyforge/commit-ment": "^1.0.0",
+    "@tidyforge/pretty-please": "^1.0.0"
+  },
+  "scripts": {
+    "commit": "cz",
+    "prepare": "husky",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format:check": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,md}": [
+      "prettier --write"
+    ]
+  }
+}

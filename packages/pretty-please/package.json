@@ -1,0 +1,48 @@
+{
+  "name": "@tidyforge/pretty-please",
+  "version": "1.0.0",
+  "description": "Automated linter + formatter setup with pre-commit hooks for easy quality coding in JS/TS/React projects.",
+  "author": "AnuvabMaity",
+  "license": "MIT",
+  "type": "module",
+  "main": "bin/setup.js",
+  "bin": {
+    "pretty-please": "./bin/setup.js"
+  },
+  "files": [
+    "bin/",
+    "configs/",
+    "hooks/"
+  ],
+  "keywords": [
+    "eslint",
+    "prettier",
+    "husky",
+    "lint-staged",
+    "code-quality",
+    "linter-setup"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnuvabMaity/tidyforge.git",
+    "directory": "packages/pretty-please"
+  },
+  "bugs": {
+    "url": "https://github.com/AnuvabMaity/tidyforge/issues"
+  },
+  "homepage": "https://github.com/AnuvabMaity/tidyforge#readme",
+  "dependencies": {
+    "@eslint/js": "^9.39.0",
+    "@tidyforge/core": "1.0.0",
+    "eslint": "^9.39.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "globals": "^16.5.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6",
+    "prettier": "3.6.2",
+    "typescript-eslint": "^8.46.2"
+  }
+}

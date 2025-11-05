@@ -1,0 +1,41 @@
+{
+  "name": "@tidyforge/commit-ment",
+  "version": "1.0.0",
+  "description": "Structured commit message enforcer setup with pre-commit hooks for good commit practices.",
+  "author": "AnuvabMaity",
+  "license": "MIT",
+  "type": "module",
+  "main": "bin/setup.js",
+  "bin": {
+    "commit-ment": "./bin/setup.js"
+  },
+  "files": [
+    "bin/",
+    "configs/",
+    "hooks/"
+  ],
+  "keywords": [
+    "commitlint",
+    "commitizen",
+    "cz-conventional-changelog",
+    "husky",
+    "commit-message"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnuvabMaity/tidyforge.git",
+    "directory": "packages/commit-ment"
+  },
+  "bugs": {
+    "url": "https://github.com/AnuvabMaity/tidyforge/issues"
+  },
+  "homepage": "https://github.com/AnuvabMaity/tidyforge#readme",
+  "dependencies": {
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "@tidyforge/core": "1.0.0",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.1.7"
+  }
+}
